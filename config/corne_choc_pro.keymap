@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+/*              Corne KEEBART
+  ╭────────────────────────┬─────────┬────────────────────────╮ 
+  │  0   1   2   3   4   5 │   6 7   │ 8   9   10  11  12  13 │ 
+  │ 14  15  16  17  18  19 │  20 21  │ 22  23  24  25  26  27 │ 
+  │ 28  29  30  31  32  33 │         │ 34  35  36  37  38  39 │ 
+  │             40  41  42 │         │ 43  44  45             │ 
+  ╰────────────────────────┴─────────┴────────────────────────╯             */
+
 #define KEYS_L 0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33
 #define KEYS_R 8 9 10 11 12 13 22 23 24 25 26 27 34 35 36 37 38 39
 #define KEYS_T 40 41 42 43 44 45
@@ -95,7 +103,7 @@
 
         left_parenthesis {
             bindings = <&kp LS(N8)>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             layers = <0>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
@@ -111,7 +119,7 @@
 
         left_bracket {
             bindings = <&kp LA(N8)>;
-            key-positions = <17 15>;
+            key-positions = <16 18>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -127,7 +135,7 @@
 
         left_curly {
             bindings = <&kp LA(LS(N8))>;
-            key-positions = <17 14>;
+            key-positions = <15 18>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -143,7 +151,7 @@
 
         less_than {
             bindings = <&kp GRAVE>;
-            key-positions = <16 18>;
+            key-positions = <17 19>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -151,7 +159,7 @@
 
         greater_than {
             bindings = <&kp LS(GRAVE)>;
-            key-positions = <24 22>;
+            key-positions = <22 24>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -167,7 +175,7 @@
 
         star {
             bindings = <&kp LS(BACKSLASH)>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -223,7 +231,7 @@
 
         n_1 {
             bindings = <&kp NUMBER_1>;
-            key-positions = <43 30>;
+            key-positions = <41 30>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -231,7 +239,7 @@
 
         n_2 {
             bindings = <&kp NUMBER_2>;
-            key-positions = <43 31>;
+            key-positions = <41 31>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -239,7 +247,7 @@
 
         n_3 {
             bindings = <&kp NUMBER_3>;
-            key-positions = <43 32>;
+            key-positions = <41 32>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -247,7 +255,7 @@
 
         n_4 {
             bindings = <&kp NUMBER_4>;
-            key-positions = <43 15>;
+            key-positions = <41 16>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -255,7 +263,7 @@
 
         n_5 {
             bindings = <&kp N5>;
-            key-positions = <43 16>;
+            key-positions = <41 17>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -263,7 +271,7 @@
 
         n_6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <17 43>;
+            key-positions = <41 18>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -271,7 +279,7 @@
 
         n_7 {
             bindings = <&kp N7>;
-            key-positions = <43 2>;
+            key-positions = <41 2>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -279,7 +287,7 @@
 
         n_8 {
             bindings = <&kp N8>;
-            key-positions = <43 3>;
+            key-positions = <41 3>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -287,7 +295,7 @@
 
         n_9 {
             bindings = <&kp N9>;
-            key-positions = <43 4>;
+            key-positions = <41 4>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -295,7 +303,7 @@
 
         n_0 {
             bindings = <&kp N0>;
-            key-positions = <43 5>;
+            key-positions = <41 5>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -303,7 +311,7 @@
 
         underscore {
             bindings = <&kp LS(FSLH)>;
-            key-positions = <37 38>;
+            key-positions = <35 36>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -311,7 +319,7 @@
 
         colon {
             bindings = <&kp LS(PERIOD)>;
-            key-positions = <38 39>;
+            key-positions = <36 37>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
@@ -319,7 +327,7 @@
 
         semi_colon {
             bindings = <&kp LS(COMMA)>;
-            key-positions = <39 37>;
+            key-positions = <35 37>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <COMBO_REQUIRE_PRIOR_IDLE_MS>;
             layers = <0>;
